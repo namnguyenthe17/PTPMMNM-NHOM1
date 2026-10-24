@@ -1,8 +1,6 @@
 # FlagFlow – BTL Đề tài 1: Quản lý cấu hình bật/tắt tính năng Web
 
-Dự án PHP 8.1+ phát triển dựa trên kiến thức Lab 01 (Ubuntu, Bash, Git) và Lab 02 (quy tắc PHP, phân lớp, kiểm thử). Bản mở rộng bám sát **Đề tài 1** trong `DE_TAI_BTL(1).docx`, trang 6–7.
-
-> **Cảnh báo:** Dùng hoàn toàn dữ liệu giả. Đây là mô hình đồ án; cần gia cố xác thực, quản lý khóa, rate limit, HTTPS và cơ sở dữ liệu chuẩn hóa trước khi cung cấp dịch vụ công khai.
+Dự án PHP 8.1+ phát triển dựa trên kiến thức Lab 01 (Ubuntu, Bash, Git) và Lab 02 (quy tắc PHP, phân lớp, kiểm thử).
 
 ## Nghiệp vụ
 
