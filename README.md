@@ -110,9 +110,3 @@ Không ghi mật khẩu vào file `.env` rồi commit; không đưa file `storag
 - `scripts/upgrade-btl1.php`: nâng cấp dữ liệu cũ không làm mất người dùng.
 - `tests/btl1.php`: ca kiểm thử bám mục 6 đề tài 1.
 - `docs/RUBRIC.md`, `docs/DEMO.md`: đối chiếu tiêu chí và kịch bản bảo vệ.
-
-## Quyền tác giả, nguồn và cộng tác
-
-Mã do nhóm phát triển với sự hỗ trợ lập trình của ChatGPT. Các mã mẫu từ Lab 1/2 chỉ được dùng làm định hướng kỹ thuật; không sao chép thư viện đóng nguồn. CSS tự xây dựng, không nạp CDN. Xem `LICENSE`, `CONTRIBUTING.md`, `.github/ISSUE_TEMPLATE/bug_report.md` và `docs/RELEASE_NOTES.md`.
-
-**Trước nộp:** tạo repository GitHub riêng cho BTL, commit README+LICENSE+CONTRIBUTING, ít nhất một issue và pull request có review, tạo Release gắn commit cuối cùng, ghi tên thành viên/đóng góp và kiểm thử trên máy khác. Không phát hành code demo bằng PHP built-in server trên Internet công khai.
