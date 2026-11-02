@@ -1,0 +1,80 @@
+/* FlagFlow Enterprise – slate, ocean blue, emerald accent.
+   Presentation-only overrides; no changes to feature-flag permissions. */
+:root {
+  --ff-2026-primary: #2563eb;
+  --ff-2026-primary-hover: #1d4ed8;
+  --ff-2026-title: #16273f;
+  --ff-2026-muted: #64748b;
+  --ff-2026-line: #e1e8f1;
+  --ff-2026-bg: #f4f7fb;
+  --ff-2026-shadow: 0 8px 25px rgba(23,44,74,.05);
+}
+body.ff-redesign, body.ff-redesign .main.ff-main {background:#f4f7fb;color:#152743}
+body.ff-redesign .sidebar.ff-sidebar {background:linear-gradient(180deg,#0d1b30 0%,#122840 100%);border-right:1px solid #223954}
+.ff-redesign .ff-brand-mark {background:linear-gradient(135deg,#1f7aeb,#0e9fb0)!important;box-shadow:0 9px 23px rgba(13,111,207,.24)!important}
+.ff-redesign .ff-navigation .ff-nav-item.is-active,
+.ff-redesign .ff-navigation .ff-nav-item:hover {background:#1c426a!important;box-shadow:inset 3px 0 #38bdf8!important}
+.ff-redesign .ff-menu-children .ff-child-link.is-active {background:#1e4263!important;box-shadow:inset 2px 0 #38bdf8!important}
+.ff-redesign .ff-user-avatar, .ff-redesign .ff-header-avatar, .ff-redesign .ff-pro-account-avatar {background:linear-gradient(135deg,#1d66da,#0d8faf)!important}
+.ff-redesign .ff-page-heading h1,.ff-dashboard-welcome h1,.ff-redesign h2,.ff-redesign h3 {color:#142642}
+.ff-redesign .ff-dashboard-kicker,.ff-redesign .ff-kicker {color:#2276c7}
+.ff-redesign .btn-primary,.ff-redesign .btn.primary,.ff-redesign a.btn-primary {
+ background:#2563eb!important;border-color:#2563eb!important;color:#fff!important;box-shadow:0 5px 15px rgba(37,99,235,.15)!important;
+}
+.ff-redesign .btn-primary:hover,.ff-redesign .btn.primary:hover {background:#1d4ed8!important;border-color:#1d4ed8!important;box-shadow:0 8px 18px rgba(37,99,235,.22)!important}
+.ff-redesign .btn-outline-primary {background:#fff;color:#2563eb;border-color:#bfdbfe}
+.ff-redesign .btn-outline-primary:hover {background:#eff6ff;color:#1d4ed8;border-color:#93c5fd}
+.ff-redesign .ff-icon-action:hover, .ff-redesign .ff-pro-icon:hover, .ff-redesign .ff-pro-icon[aria-expanded=true] {background:#eff6ff!important;color:#2563eb!important;border-color:#bfdbfe!important}
+.ff-redesign .topbar.ff-topbar {background:#fff!important;border-bottom:1px solid #e1e8f1!important}
+.ff-redesign .ff-pro-search {background:#f5f8fd!important;border-color:#e7eef7!important}
+.ff-redesign .ff-pro-search:focus-within {border-color:#93c5fd!important;box-shadow:0 0 0 4px rgba(37,99,235,.09)!important}
+.ff-redesign .panel, .ff-redesign .card, .ff-project-feature-card, .ff-project-pick {border-color:#e3eaf4!important;box-shadow:0 6px 22px rgba(24,54,90,.035)!important}
+.ff-redesign .ff-project-pick.is-selected {border-color:#60a5fa!important;background:#f8fbff!important}
+.ff-redesign .ff-project-pick:hover, .ff-project-feature-card:hover {box-shadow:0 11px 27px rgba(24,54,90,.09)!important}
+.ff-redesign .ff-pick-icon {background:#eaf3ff!important;color:#2563eb!important}
+.ff-redesign .ff-kpi-blue {background:linear-gradient(130deg,#eaf4ff,#e2efff)!important}
+.ff-redesign .ff-kpi-purple {background:linear-gradient(130deg,#edf5ff,#f0f4fa)!important}
+.ff-redesign .ff-kpi-green {background:linear-gradient(130deg,#e6faf3,#e0f6ee)!important}
+.ff-redesign .ff-kpi-orange {background:linear-gradient(130deg,#fffaed,#fdf3df)!important}
+.ff-redesign input:focus,.ff-redesign select:focus,.ff-redesign textarea:focus {border-color:#60a5fa!important;box-shadow:0 0 0 3px rgba(37,99,235,.12)!important}
+.ff-preview-admin-guide,.ff-admin-access-banner {border:1px solid #bcd9fc;background:#eff7ff;border-radius:15px;padding:18px 20px;margin:16px 0 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:#244b74;line-height:1.55;font-size:13px}
+.ff-preview-admin-guide>div:first-child,.ff-admin-access-banner>div:first-child{flex:1;min-width:260px}
+.ff-preview-guide-actions {display:flex;flex-wrap:wrap;gap:8px}
+.ff-preview-guide-actions .btn {border-radius:10px;white-space:nowrap;font-size:12px;font-weight:700}
+.ff-admin-project-controls {background:#f6faff;border:1px solid #d9e9fb;border-radius:13px;padding:13px 15px;margin-top:18px;color:#253e5e}
+.ff-admin-project-controls>summary,.ff-project-danger>summary {cursor:pointer;font-size:12px;font-weight:750;list-style-position:inside}
+.ff-admin-project-controls>form {margin:15px 0;display:grid;gap:10px}
+.ff-admin-project-controls label,.ff-project-danger label {font-size:12px;font-weight:650;display:grid;gap:5px}
+.ff-admin-project-controls input {border:1px solid #cddcec;border-radius:10px;padding:10px;background:#fff;width:100%;font-weight:500;min-width:0}
+.ff-manage-link {display:inline-flex;align-items:center;color:#1668ba;font-size:12px;font-weight:750;text-decoration:none;margin-top:9px}
+.ff-manage-link:hover {color:#0b458b;text-decoration:underline}
+.ff-access-note,.ff-denial-reason {font-size:12px;line-height:1.6;color:#667d95;margin:8px 0}
+.ff-project-danger {margin-top:14px;border-top:1px solid #d9e9fb;padding-top:14px}
+.ff-project-danger>summary {color:#bd3636}
+.ff-project-danger form {display:grid;gap:12px;margin-top:12px}
+.ff-access-info {border-radius:11px;border:1px solid #cae4fa;background:#f1f8fe;color:#35536d;padding:13px 16px;margin:0 0 18px;font-size:13px}
+.ff-access-manager {scroll-margin-top:100px}
+.ff-redesign .ff-project-feature-card .badge {border-radius:7px;padding:6px 12px;font-size:12px;line-height:1.25;font-weight:700}
+.ff-redesign .ff-project-feature-card .text-bg-secondary {background:#e9eff6!important;color:#475569!important}
+.ff-redesign .ff-project-feature-card .text-bg-success {background:#d9f8eb!important;color:#0f7857!important}
+body.theme-dark .ff-preview-admin-guide,body.theme-dark .ff-admin-access-banner,body.theme-dark .ff-admin-project-controls,body.theme-dark .ff-access-info{background:#19324a;color:#c5dcf5;border-color:#355570}
+body.theme-dark .ff-admin-project-controls input {background:#182839;border-color:#3a566f;color:#fff}
+@media(max-width:850px){.ff-preview-admin-guide,.ff-admin-access-banner{align-items:flex-start}.ff-preview-guide-actions{width:100%}.ff-preview-guide-actions .btn{flex:1}}
+/* Respect FlagFlow's persisted dark theme (data-ff-theme), including custom admin panels. */
+body.ff-redesign[data-ff-theme="dark"],
+body.ff-redesign[data-ff-theme="dark"] .main.ff-main {background:#111d2e!important;color:#e3ecf9!important}
+body.ff-redesign[data-ff-theme="dark"] .topbar.ff-topbar {background:#19283d!important;border-color:#33435b!important}
+body.ff-redesign[data-ff-theme="dark"] .panel,
+body.ff-redesign[data-ff-theme="dark"] .card,
+body.ff-redesign[data-ff-theme="dark"] .ff-project-pick,
+body.ff-redesign[data-ff-theme="dark"] .ff-project-feature-card {background:#1c2c42!important;color:#e9f1fd!important;border-color:#344964!important}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-pick.is-selected {background:#203b53!important;border-color:#3d7ab0!important}
+body.ff-redesign[data-ff-theme="dark"] h1,body.ff-redesign[data-ff-theme="dark"] h2,body.ff-redesign[data-ff-theme="dark"] h3,body.ff-redesign[data-ff-theme="dark"] h4 {color:#f0f5fd!important}
+body.ff-redesign[data-ff-theme="dark"] .ff-admin-project-controls,
+body.ff-redesign[data-ff-theme="dark"] .ff-preview-admin-guide,
+body.ff-redesign[data-ff-theme="dark"] .ff-admin-access-banner,
+body.ff-redesign[data-ff-theme="dark"] .ff-access-info {background:#1c3651;color:#d5e8fc;border-color:#375878}
+body.ff-redesign[data-ff-theme="dark"] .ff-admin-project-controls input {background:#182839;color:#f5f8fd;border-color:#3a566f}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-feature-card .text-bg-secondary {background:#34465d!important;color:#d2dfef!important}
+body.ff-redesign[data-ff-theme="dark"] .ff-kpi-card {background:#253851!important;border-color:#39506a!important}
+body.ff-redesign[data-ff-theme="dark"] .ff-pro-search {background:#25364b!important;border-color:#3b4b64!important}

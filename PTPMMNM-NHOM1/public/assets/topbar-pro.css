@@ -1,0 +1,151 @@
+/* FlagFlow 2026 · Topbar / notification / profile navigation
+   Scoped styles; Bootstrap 5 remains the only UI framework. */
+.ff-redesign .topbar.ff-topbar {
+  min-height:82px; padding:15px clamp(20px,2.6vw,38px); gap:18px;
+  background:rgba(255,255,255,.96);border-bottom:1px solid #e6ebf4;
+  box-shadow:0 3px 18px rgba(24,41,77,.025);position:relative;z-index:70;
+}
+.ff-redesign .ff-pro-search {height:46px;max-width:655px;width:min(655px,48vw);background:#f5f7fd;
+ border:1px solid #edf0f8;border-radius:13px;padding:0 15px;gap:12px;transition:box-shadow .2s,border-color .2s,background .2s}
+.ff-redesign .ff-pro-search:focus-within {background:#fff;border-color:#aaa2f6;box-shadow:0 0 0 4px rgba(104,88,235,.10)}
+.ff-redesign .ff-pro-search > i {font-size:18px;color:#6d83a0}
+.ff-redesign .ff-pro-search input {font-size:13px;font-weight:500}
+.ff-redesign .ff-pro-search kbd {font-size:10px;font-weight:700;color:#8f9fb7;border-color:#e3e9f3;border-radius:7px;padding:5px 8px}
+.ff-redesign .ff-pro-right {display:flex;align-items:center;justify-content:flex-end;gap:12px;min-width:max-content}
+.ff-redesign .ff-pro-live {display:flex;gap:8px;align-items:center;color:#6c7e98;font-size:11px;font-weight:700;white-space:nowrap;margin-right:4px}
+.ff-redesign .ff-pro-live .ff-live-dot {box-shadow:0 0 0 4px rgba(27,189,139,.10)}
+.ff-redesign .ff-pro-icon {width:44px;height:44px;display:grid;place-items:center;background:#fff;border:1px solid #e6ebf4;
+ border-radius:13px;color:#425578;box-shadow:0 3px 12px rgba(22,38,72,.035);font-size:19px;transition:background .18s,color .18s,transform .18s,box-shadow .18s}
+.ff-redesign .ff-pro-icon:hover,.ff-redesign .ff-pro-icon[aria-expanded=true] {background:#f1efff;color:#6155de;border-color:#d9d6ff;transform:translateY(-2px);box-shadow:0 9px 22px rgba(84,72,210,.10)}
+.ff-redesign .ff-pro-icon:focus-visible,.ff-redesign .ff-pro-account-button:focus-visible {outline:3px solid #aaa4f2;outline-offset:3px}
+.ff-redesign .ff-pro-bell .ff-notification-count {font-size:10px;width:auto;min-width:19px;box-shadow:0 2px 7px #d83e4b44}
+.ff-redesign .ff-pro-divider {margin:0 2px;height:35px;background:#e9edf5}
+.ff-redesign .ff-pro-account-button {border:1px solid transparent;background:transparent;border-radius:14px;padding:6px 8px;min-height:54px;gap:11px;transition:background .18s,border-color .18s}
+.ff-redesign .ff-pro-account-button:hover,.ff-redesign .ff-pro-account-button[aria-expanded=true] {background:#f3f3ff;border-color:#e7e5ff}
+.ff-redesign .ff-pro-account-button .ff-header-avatar {width:44px;height:44px;border-radius:13px;font-size:17px;box-shadow:0 7px 16px rgba(101,83,219,.2)}
+.ff-redesign .ff-pro-account-button .ff-user-caption b {font-size:13px;color:#1c2d4d;max-width:150px}
+.ff-redesign .ff-pro-account-button .ff-user-caption small {font-size:11px;color:#899ab0}
+.ff-redesign .ff-pro-menu {border:1px solid #e6eaf4;border-radius:18px;background:#fff;box-shadow:0 25px 58px rgba(23,39,71,.15);padding:9px;z-index:1100;margin-top:12px!important;overflow:hidden}
+.ff-redesign .ff-pro-menu .dropdown-item {font-weight:650;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px;color:#364963;transition:background .15s,color .15s}
+.ff-redesign .ff-pro-menu .dropdown-item:hover {background:#f1efff;color:#6050d7}
+.ff-redesign .ff-pro-quick {min-width:245px}
+.ff-redesign .ff-pro-menu-title,.ff-redesign .ff-pro-overline {display:block;color:#8f9eb4;font-size:10px;font-weight:850;letter-spacing:1.3px}
+.ff-redesign .ff-pro-menu-title {padding:11px 13px 8px}
+.ff-redesign .ff-pro-quick .dropdown-item i:first-child {display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#efeeff;color:#6856de;font-size:15px}
+.ff-redesign .ff-pro-quick .dropdown-item .ff-pro-tail {margin-left:auto;color:#b9c4d6;font-size:12px}
+.ff-redesign .ff-pro-notice-menu {width:min(420px,calc(100vw - 24px));padding:0;max-height:80vh;overflow-y:auto}
+.ff-redesign .ff-pro-notice-header {display:flex;align-items:center;justify-content:space-between;gap:10px;padding:21px 22px 17px;border-bottom:1px solid #edf0f6}
+.ff-redesign .ff-pro-notice-header strong {display:block;font-size:16px;letter-spacing:-.3px;color:#192b4b;margin-top:4px}
+.ff-redesign .ff-pro-counter {background:#f1edff;color:#6654db;font-size:11px;font-weight:800;padding:6px 10px;border-radius:99px;white-space:nowrap}
+.ff-redesign .ff-pro-notice-list {padding:7px}
+.ff-redesign .ff-pro-notice-item {display:flex;align-items:center;gap:13px;text-decoration:none;padding:13px;border-radius:12px;transition:background .15s}
+.ff-redesign .ff-pro-notice-item+.ff-pro-notice-item {border-top:1px solid #f0f3f8}
+.ff-redesign .ff-pro-notice-item:hover {background:#f7f8ff}
+.ff-redesign .ff-pro-notice-icon {width:40px;height:40px;display:grid;place-items:center;flex:none;border-radius:12px;font-size:18px}
+.ff-redesign .ff-kind-amber {color:#d89112;background:#fff4dc}
+.ff-redesign .ff-kind-violet {color:#6a55d9;background:#eeebff}
+.ff-redesign .ff-kind-mint {color:#0a9d78;background:#e3f8f0}
+.ff-redesign .ff-kind-rose {color:#e04b65;background:#fff0f1}
+.ff-redesign .ff-pro-notice-content {display:block;flex:1;min-width:0}
+.ff-redesign .ff-pro-notice-content strong {display:block;color:#273954;font-size:12px;line-height:1.5}
+.ff-redesign .ff-pro-notice-content small {display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;color:#8899b0;font-size:11px;margin-top:3px}
+.ff-redesign .ff-pro-notice-arrow {color:#bdc6d4;font-size:12px}
+.ff-redesign .ff-pro-all-link {display:flex;align-items:center;justify-content:center;gap:9px;background:#f8f9fd;border-top:1px solid #edf0f5;text-decoration:none;padding:15px;color:#6353d8;font-size:12px;font-weight:800}
+.ff-redesign .ff-pro-all-link:hover {background:#efeeff}
+.ff-redesign .ff-pro-notice-empty {padding:32px 20px;display:flex;flex-direction:column;gap:7px;align-items:center;text-align:center;color:#8494a9}
+.ff-redesign .ff-pro-notice-empty i {font-size:32px;color:#13b88c}
+.ff-redesign .ff-pro-notice-empty strong {color:#334663;font-size:13px}
+.ff-redesign .ff-pro-notice-empty span {font-size:11px}
+.ff-redesign .ff-pro-account-menu {min-width:295px}
+.ff-redesign .ff-pro-account-menu .ff-account-menu-head {padding:14px 13px 17px}
+.ff-redesign .ff-pro-logout-form {margin:0}
+.ff-redesign .ff-pro-logout-form button {width:100%;background:none;border:0;text-align:left}
+.ff-redesign .ff-pro-account-menu .ff-account-signout {color:#cf475a}
+.ff-redesign .ff-pro-account-menu .ff-account-signout:hover {background:#fff0f1;color:#bd304a}
+/* Buttons / controls consistent across the application */
+.ff-redesign .btn.btn-primary,.ff-redesign .btn.primary {background:linear-gradient(115deg,#6658e5,#5a4ad4);border-color:#6253db;color:#fff;box-shadow:0 6px 17px rgba(102,85,221,.15);font-weight:750;border-radius:11px}
+.ff-redesign .btn.btn-primary:hover,.ff-redesign .btn.primary:hover {background:linear-gradient(115deg,#5748d6,#493db9);box-shadow:0 10px 22px rgba(86,70,198,.19)}
+.ff-redesign .btn.btn-outline-primary {border-radius:11px;font-weight:750}
+.ff-redesign .btn:focus-visible {outline:3px solid #9185f0;outline-offset:3px}
+/* Full UI dark mode, not only the navigation bar */
+.ff-redesign[data-ff-theme=dark] .ff-topbar {background:#19263a!important;border-bottom-color:#2a3a52!important}
+.ff-redesign[data-ff-theme=dark] .ff-pro-search,.ff-redesign[data-ff-theme=dark] .ff-pro-icon,.ff-redesign[data-ff-theme=dark] .ff-pro-menu {background:#24344c;color:#eaf1ff;border-color:#34445d}
+.ff-redesign[data-ff-theme=dark] .ff-pro-account-button,.ff-redesign[data-ff-theme=dark] .ff-pro-account-button .ff-user-caption b {color:#edf3ff}
+.ff-redesign[data-ff-theme=dark] .ff-pro-account-button:hover,.ff-redesign[data-ff-theme=dark] .ff-pro-icon:hover {background:#2f4161}
+.ff-redesign[data-ff-theme=dark] .ff-pro-menu .dropdown-item,.ff-redesign[data-ff-theme=dark] .ff-pro-notice-content strong {color:#e5eeff}
+.ff-redesign[data-ff-theme=dark] .ff-pro-menu .dropdown-item:hover,.ff-redesign[data-ff-theme=dark] .ff-pro-notice-item:hover {background:#31405b;color:#fff}
+.ff-redesign[data-ff-theme=dark] .ff-pro-notice-header,.ff-redesign[data-ff-theme=dark] .ff-pro-notice-item+.ff-pro-notice-item {border-color:#33435c}
+.ff-redesign[data-ff-theme=dark] .ff-pro-notice-header strong,.ff-redesign[data-ff-theme=dark] .ff-pro-notice-empty strong {color:#f1f5ff}
+.ff-redesign[data-ff-theme=dark] .ff-pro-all-link {background:#1b2c44;color:#beb5ff;border-color:#364860}
+.ff-redesign[data-ff-theme=dark] .ff-pro-counter,.ff-redesign[data-ff-theme=dark] .ff-pro-quick .dropdown-item i:first-child {background:#3c3768;color:#d7d0ff}
+.ff-redesign[data-ff-theme=dark] .ff-pro-logout-form button {background:transparent;color:#ff9b9f}
+.ff-redesign[data-ff-theme=dark] .ff-pro-search input::placeholder {color:#a4b4cc}
+.ff-redesign[data-ff-theme=dark] .ff-global-search kbd {background:#1d2c43;border-color:#3b4c66;color:#c8d5e8}
+.ff-redesign[data-ff-theme=dark] .ff-surface,.ff-redesign[data-ff-theme=dark] .panel,.ff-redesign[data-ff-theme=dark] .preview-controls,.ff-redesign[data-ff-theme=dark] .ff-account-menu {background:#1c2940!important;border-color:#34435d!important}
+.ff-redesign[data-ff-theme=dark] .ff-kpi-card {background:#24334e!important;border-color:#374660!important}
+.ff-redesign[data-ff-theme=dark] .ff-kpi-card strong {color:#f7f9ff}
+.ff-redesign[data-ff-theme=dark] .ff-dashboard-welcome p,.ff-redesign[data-ff-theme=dark] .ff-subtitle {color:#b5c5da}
+.ff-redesign[data-ff-theme=dark] .ff-bar-background {background:#34435d}
+.ff-redesign[data-ff-theme=dark] .ff-notification-panel a,.ff-redesign[data-ff-theme=dark] .ff-quick-notice-list a {color:#e5edff}
+@media (max-width:1250px) {.ff-redesign .ff-pro-live {display:none}.ff-redesign .ff-pro-search {width:min(570px,46vw)}}
+@media (max-width:800px) {.ff-redesign .topbar.ff-topbar {padding:11px 16px;min-height:66px}.ff-redesign .ff-pro-search{flex:1;max-width:100%;width:auto}.ff-redesign .ff-pro-right {gap:7px}.ff-redesign .ff-pro-icon{height:40px;width:40px;border-radius:12px}.ff-redesign .ff-pro-account-button{padding:3px}.ff-redesign .ff-pro-account-button .ff-header-avatar{width:39px;height:39px}.ff-redesign .ff-pro-divider{display:none}}
+@media (max-width:560px) {.ff-redesign .ff-pro-right{gap:5px}.ff-redesign .ff-pro-search{min-width:40px;max-width:none;width:44px;flex:0 1 44px;padding:0 12px}.ff-redesign .ff-pro-search:focus-within {flex:1;width:auto}.ff-redesign .ff-pro-notice-menu{position:fixed!important;inset:72px 12px auto!important;max-width:none;width:auto;transform:none!important}.ff-redesign .ff-pro-quick{min-width:220px}.ff-redesign .ff-pro-account-menu{min-width:245px}.ff-redesign .ff-pro-account-button .ff-account-chevron{display:none}}
+@media(prefers-reduced-motion:reduce) {.ff-redesign .ff-pro-icon,.ff-redesign .ff-pro-account-button {transition:none}}
+
+/* Tự chứa icon SVG trong PHP: không phụ thuộc font hay Internet. */
+.ff-redesign .ff-top-svg {display:inline-block;flex:0 0 auto;width:19px;height:19px;vertical-align:middle;stroke:currentColor;fill:none}
+.ff-redesign .ff-pro-icon .ff-top-svg {width:21px;height:21px;stroke-width:1.9}
+.ff-redesign .ff-pro-quick .dropdown-item .ff-top-svg:first-child {width:29px;height:29px;padding:6px;border-radius:9px;background:#efeeff;color:#6856de}
+.ff-redesign .ff-pro-quick .dropdown-item .ff-pro-tail {width:14px;height:14px;margin-left:auto;color:#b9c4d6}
+.ff-redesign .ff-pro-notice-icon .ff-top-svg {width:20px;height:20px}
+.ff-redesign .ff-pro-notice-arrow {width:13px;height:13px}
+.ff-redesign .ff-pro-notice-empty .ff-top-svg {width:32px;height:32px;color:#13b88c}
+.ff-redesign .ff-pro-all-link .ff-top-svg {width:16px;height:16px}
+.ff-redesign .ff-pro-account-menu .dropdown-item .ff-top-svg {width:18px;height:18px}
+.ff-redesign .ff-pro-search > .ff-top-svg {color:#6d83a0;width:19px;height:19px}
+.ff-redesign .ff-pro-account-button .ff-account-chevron {width:15px;height:15px;color:#8193ab}
+.ff-redesign .ff-pro-theme .ff-theme-sun {display:none}
+.ff-redesign[data-ff-theme="dark"] .ff-pro-theme .ff-theme-sun {display:inline-block}
+.ff-redesign[data-ff-theme="dark"] .ff-pro-theme .ff-theme-moon {display:none}
+.ff-redesign[data-ff-theme="dark"] .ff-pro-quick .dropdown-item .ff-top-svg:first-child {background:#3c3768;color:#d7d0ff}
+
+
+/* Gợi ý tìm kiếm toàn cục theo vai trò – tương thích Bootstrap 5 */
+.ff-redesign .ff-search-combobox {position:relative;overflow:visible;isolation:isolate}
+.ff-redesign .ff-search-combobox .ff-global-suggest {
+  position:absolute;top:calc(100% + 12px);left:0;z-index:1300;
+  width:min(620px,calc(100vw - 32px));max-height:min(590px,75vh);
+  background:#fff;color:#20304b;border:1px solid #e5eafb;border-radius:18px;
+  box-shadow:0 24px 60px rgba(19,32,64,.19);display:flex;flex-direction:column;overflow:hidden;
+  padding:0;text-align:left;
+}
+.ff-redesign .ff-search-combobox .ff-global-suggest[hidden],
+.ff-redesign .ff-global-suggest-item[hidden],.ff-redesign .ff-global-suggest-empty[hidden] {display:none!important}
+.ff-redesign .ff-global-suggest-head {display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:17px 18px 11px;color:#6c5de4;font-size:10px;letter-spacing:1px;font-weight:850;border-bottom:1px solid #eff2f8}
+.ff-redesign .ff-global-suggest-head small {letter-spacing:normal;color:#97a4b8;font-weight:600;font-size:10px}
+.ff-redesign .ff-global-suggest-items {overflow-y:auto;min-height:0;padding:8px;scrollbar-width:thin}
+.ff-redesign .ff-global-suggest-item {display:flex;align-items:center;gap:12px;border-radius:12px;padding:11px 12px;
+  text-decoration:none!important;color:#20304b;transition:background .15s}
+.ff-redesign .ff-global-suggest-item:hover,.ff-redesign .ff-global-suggest-item.is-selected,
+.ff-redesign .ff-global-suggest-item:focus-visible {background:#f0eeff;color:#5749d2;outline:none}
+.ff-redesign .ff-global-suggest-icon {width:38px;height:38px;display:grid;place-items:center;flex:none;
+  background:#f1f0ff;border-radius:11px;color:#6252d7}
+.ff-redesign .ff-global-suggest-text {display:block;min-width:0;flex:1}
+.ff-redesign .ff-global-suggest-text strong {display:block;font-size:13px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ff-redesign .ff-global-suggest-text small {display:block;color:#8695aa;margin-top:3px;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ff-redesign .ff-global-suggest-arrow {width:16px;height:16px;color:#9eadd0}
+.ff-redesign .ff-global-suggest-empty {padding:24px;text-align:center;color:#7b8ba2;font-size:13px}
+.ff-redesign .ff-global-suggest-all {padding:15px;border:0;border-top:1px solid #e9edf5;background:#f8f9ff;
+  color:#5e4fda;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px;width:100%}
+.ff-redesign .ff-global-suggest-all:hover {background:#f0efff}
+.ff-redesign .ff-global-suggest .ff-top-svg {width:18px;height:18px}
+.ff-redesign[data-ff-theme=dark] .ff-search-combobox .ff-global-suggest {background:#1c2940;color:#e5eeff;border-color:#384761}
+.ff-redesign[data-ff-theme=dark] .ff-global-suggest-head {border-color:#364763;color:#c1b7ff}
+.ff-redesign[data-ff-theme=dark] .ff-global-suggest-item {color:#e5eeff}
+.ff-redesign[data-ff-theme=dark] .ff-global-suggest-item:hover,
+.ff-redesign[data-ff-theme=dark] .ff-global-suggest-item.is-selected {background:#303957;color:#fff}
+.ff-redesign[data-ff-theme=dark] .ff-global-suggest-icon {background:#37325d;color:#c8c0ff}
+.ff-redesign[data-ff-theme=dark] .ff-global-suggest-all {background:#253452;border-color:#384761;color:#cbc2ff}
+@media (max-width:800px) {.ff-redesign .ff-search-combobox .ff-global-suggest {width:min(480px,calc(100vw - 22px));}}
+@media (max-width:560px) {.ff-redesign .ff-search-combobox:focus-within .ff-global-suggest {position:fixed;top:72px;left:11px;right:11px;width:auto;max-height:65vh}}

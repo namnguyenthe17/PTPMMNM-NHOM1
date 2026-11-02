@@ -1,0 +1,82 @@
+/* Trang cá nhân và menu người dùng · Bootstrap 5, không dùng trang HTML riêng */
+.ff-account-dropdown {position:relative}
+.ff-account-trigger {display:flex;align-items:center;gap:10px;max-width:250px;padding:4px 5px;border:0;background:transparent;color:inherit;cursor:pointer;border-radius:12px;min-height:43px}
+.ff-account-trigger:hover,.ff-account-trigger[aria-expanded="true"] {background:#f2f3ff}
+.ff-account-chevron {font-size:12px;color:#93a4b9;margin-left:4px}
+.ff-header-avatar,.ff-profile-photo,.ff-user-avatar {display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
+.ff-avatar-img {display:block;width:100%;height:100%;object-fit:cover}
+.ff-account-menu {min-width:285px;max-width:calc(100vw - 24px);border:1px solid #e8edf7;border-radius:16px;padding:8px;box-shadow:0 22px 55px rgba(24,35,66,.15);z-index:1090}
+.ff-account-menu-head {display:flex;align-items:center;gap:12px;padding:12px 10px 14px;border-bottom:1px solid #edf0f7;margin-bottom:6px}
+.ff-account-menu-head .ff-header-avatar {width:48px;height:48px;border-radius:13px;background:#6764eb;color:#fff;font-weight:800}
+.ff-account-menu-head b {display:block;color:#1e3052;font-size:13px}
+.ff-account-menu-head small {display:block;margin-top:3px;color:#8393ab;font-size:11px}
+.ff-account-menu .dropdown-item {padding:11px 12px;border-radius:9px;font-size:13px;font-weight:650;color:#344562;display:flex;align-items:center;gap:12px}
+.ff-account-menu .dropdown-item:hover {background:#f0f0ff;color:#5849d3}
+.ff-account-menu .dropdown-item > i {width:20px;font-size:17px;text-align:center}
+.ff-account-menu .dropdown-header {font-size:10px;letter-spacing:1px;color:#93a2b9;padding:6px 12px}
+.ff-account-menu .ff-account-signout {color:#cb3d52}
+.ff-sidebar-avatar-link {text-decoration:none!important;color:#fff!important}
+.ff-profile-name-link {color:inherit;text-decoration:none}
+.ff-profile-name-link:hover {color:#aca7ff}
+.ff-profile-page {max-width:1500px;margin:0 auto 30px}
+.ff-profile-heading {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:20px}
+.ff-profile-eyebrow {font-size:11px;color:#91a0b7;font-weight:650;letter-spacing:.3px;margin-bottom:8px}
+.ff-profile-heading h1 {font-size:28px;letter-spacing:-.9px;margin:0 0 5px;color:#192c4a;font-weight:800}
+.ff-profile-heading p {font-size:13px;color:#8c9aaf;margin:0}
+.ff-profile-cover {background:linear-gradient(117deg,#423fbe,#7064ee 65%,#9487fc);min-height:170px;border-radius:19px 19px 0 0;padding:31px 35px 42px;color:#fff;position:relative;overflow:hidden}
+.ff-profile-cover > div:first-of-type:not(.ff-profile-cover-shape) {position:relative;z-index:1}
+.ff-profile-cover-shape {position:absolute!important;width:390px;height:390px;border:1px solid #ffffff25;border-radius:50%;right:-40px;top:-180px;box-shadow:0 0 0 65px #ffffff0b,0 0 0 145px #ffffff0b}
+.ff-profile-overline {font-size:10px;letter-spacing:1.8px;font-weight:800;color:#dad6ff}
+.ff-profile-cover h2 {font-size:24px;font-weight:800;margin:12px 0 5px;color:white}
+.ff-profile-cover p {font-size:12px;color:#e5e2ff;margin:0}
+.ff-profile-identity {padding:20px 28px;display:flex;align-items:center;gap:19px;border-radius:0 0 16px 16px;border-top:0!important;box-shadow:0 9px 26px #1f315009;margin-bottom:18px}
+.ff-profile-photo {width:78px;height:78px;border-radius:19px;background:linear-gradient(135deg,#8178ec,#554bd6);color:white;font-size:31px;font-weight:800;border:4px solid #fff;box-shadow:0 6px 18px #26346613}
+.ff-profile-person {flex:1;min-width:0}
+.ff-profile-person h2 {font-size:19px;display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0 0 7px;color:#152747;font-weight:800}
+.ff-profile-role-chip {padding:6px 10px;border-radius:99px;background:#f0edff;color:#6551d7;font-size:10px;font-weight:750}
+.ff-profile-person p {font-size:12px;color:#8393aa;margin:0 0 8px}
+.ff-profile-person p > i {margin-right:3px}
+.ff-profile-meta {display:flex;align-items:center;flex-wrap:wrap;gap:14px;font-size:11px;color:#607491}
+.ff-profile-meta i {color:#13ac86;margin-right:5px}
+.ff-profile-photo-btn {white-space:nowrap}
+.ff-profile-tabs {display:flex;gap:6px;overflow-x:auto;border:1px solid #e9edf6;background:#fff;border-radius:13px;padding:7px;margin-bottom:18px}
+.ff-profile-tabs a {padding:10px 14px;border-radius:9px;white-space:nowrap;font-size:12px;font-weight:750;color:#7a8ba4;text-decoration:none}
+.ff-profile-tabs a:hover,.ff-profile-tabs a:focus {background:#efedff;color:#604ed7}
+.ff-profile-tabs a i {margin-right:7px;font-size:15px}
+.ff-profile-content-grid {display:grid;grid-template-columns:minmax(0,2.1fr) minmax(255px,.95fr);gap:18px}
+.ff-profile-main-col,.ff-profile-side-col {display:flex;flex-direction:column;gap:18px;min-width:0}
+.ff-profile-card {padding:24px;border-radius:16px}
+.ff-profile-section-head {display:flex;align-items:center;gap:12px;margin-bottom:21px}
+.ff-profile-section-head h3 {font-size:16px;font-weight:800;color:#1d3052;margin:0 0 4px}
+.ff-profile-section-head p,.ff-profile-card > p {font-size:12px;color:#8393a8;margin:0;line-height:1.7}
+.ff-profile-section-icon {width:42px;height:42px;border-radius:12px;background:#f0edff;color:#6455df;display:grid;place-items:center;font-size:19px;flex-shrink:0}
+.ff-profile-form .form-label,.ff-photo-upload-form .form-label {font-size:12px;font-weight:700;color:#4d607e;margin-bottom:7px}
+.ff-profile-form .form-control,.ff-photo-upload-form .form-control {min-height:44px;border:1px solid #e0e7f1;border-radius:9px;box-shadow:none;color:#1c2f4d;font-size:13px}
+.ff-profile-form textarea.form-control {min-height:100px}
+.ff-profile-form .form-control:focus,.ff-photo-upload-form .form-control:focus {border-color:#8478f0;box-shadow:0 0 0 3px #e8e5ff}
+.ff-profile-form-actions {display:flex;justify-content:flex-end;border-top:1px solid #eef1f6;margin-top:22px;padding-top:18px}
+.ff-photo-edit-row {display:flex;align-items:flex-start;gap:20px}
+.ff-photo-preview {width:106px;height:106px;border-radius:22px;font-size:40px;flex-shrink:0}
+.ff-photo-form-area {flex:1;min-width:0}
+.ff-photo-upload-form .form-control {padding:8px}
+.ff-profile-quick-links {display:flex;flex-direction:column;gap:4px;margin-top:12px}
+.ff-profile-quick-links a {display:flex;align-items:center;gap:11px;text-decoration:none;color:#415470;padding:12px 6px;border-bottom:1px solid #f0f2f6;font-weight:650;font-size:12px}
+.ff-profile-quick-links a:hover {color:#5b4fd5}
+.ff-profile-quick-links a i:first-child {font-size:17px;color:#6e61e8}
+.ff-profile-quick-links a i:last-child {font-size:12px;margin-left:auto}
+.ff-profile-tip > i {display:block;color:#e3a438;font-size:26px;margin-bottom:10px}
+.ff-profile-tip strong {display:block;font-size:13px;margin-bottom:7px}
+.ff-profile-event {display:flex;gap:14px;margin-bottom:17px}
+.ff-profile-event-dot {flex-shrink:0;display:grid;place-items:center;width:30px;height:30px;background:#e7f8f2;border-radius:50%;color:#1aa785}
+.ff-profile-event strong {display:block;color:#243754;font-size:12px;margin-bottom:3px}
+.ff-profile-event p {color:#62748c;font-size:12px;margin:0 0 3px;overflow-wrap:anywhere}
+.ff-profile-event small {color:#a3aec1;font-size:11px}
+.ff-profile-empty {padding:20px;border-radius:10px;background:#f7f9fd;color:#7f91aa;font-size:12px}
+.ff-profile-card[id] {scroll-margin-top:95px}
+.ff-redesign[data-ff-theme=dark] .ff-profile-identity,.ff-redesign[data-ff-theme=dark] .ff-profile-tabs,.ff-redesign[data-ff-theme=dark] .ff-profile-card,.ff-redesign[data-ff-theme=dark] .ff-account-menu {background:#1c2940;color:#e8efff;border-color:#324159}
+.ff-redesign[data-ff-theme=dark] .ff-profile-heading h1,.ff-redesign[data-ff-theme=dark] .ff-profile-person h2,.ff-redesign[data-ff-theme=dark] .ff-profile-section-head h3 {color:#e8efff}
+.ff-redesign[data-ff-theme=dark] .ff-account-menu .dropdown-item {color:#dae7fa}
+.ff-redesign[data-ff-theme=dark] .ff-account-menu-head b {color:#fff}
+.ff-redesign[data-ff-theme=dark] .ff-account-trigger {color:#e8efff}
+@media(max-width:900px) {.ff-profile-content-grid {grid-template-columns:1fr}.ff-profile-identity {flex-wrap:wrap}.ff-profile-photo-btn {margin-left:auto}}
+@media(max-width:580px) {.ff-profile-cover {padding:27px 22px 33px}.ff-profile-heading {flex-wrap:wrap}.ff-profile-identity {padding:18px;gap:12px}.ff-profile-photo {width:64px;height:64px}.ff-profile-person {width:calc(100% - 80px);flex:auto}.ff-profile-photo-btn {width:100%}.ff-profile-meta {gap:6px}.ff-profile-card {padding:19px}.ff-photo-edit-row {flex-wrap:wrap}.ff-profile-tabs {padding:5px}}

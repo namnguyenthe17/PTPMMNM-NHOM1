@@ -1,0 +1,6 @@
+/storage/*
+!/storage/.gitkeep
+/.local/
+.env
+*.log
+__pycache__/

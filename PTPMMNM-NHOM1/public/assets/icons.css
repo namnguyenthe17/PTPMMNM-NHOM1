@@ -1,0 +1,14 @@
+/* Lightweight icon fallbacks, no icon fonts or external resources. */
+.bi{display:inline-flex;align-items:center;justify-content:center;font-style:normal;line-height:1;font-family:system-ui,"Segoe UI Symbol",Arial,sans-serif}
+.bi::before{content:"•";font-weight:750}
+.bi-intersect::before{content:"✦"}.bi-folder2::before,.bi-folder2-open::before,.bi-folder::before{content:"▤"}
+.bi-grid-1x2::before{content:"▦"}.bi-chevron-down::before{content:"⌄"}.bi-chevron-right::before{content:"›"}
+.bi-toggles::before,.bi-sliders::before{content:"☷"}.bi-people::before{content:"♧"}
+.bi-layers::before{content:"▱"}.bi-braces::before{content:"{}";font-weight:800;font-size:.84em}
+.bi-patch-check::before,.bi-shield-check::before{content:"✓"}.bi-clock-history::before{content:"◷"}
+.bi-person-badge::before,.bi-person-check::before{content:"♙"}.bi-send::before{content:"➤"}
+.bi-inboxes::before{content:"▧"}.bi-stars::before{content:"✧"}.bi-window-stack::before,.bi-display::before{content:"▣"}
+.bi-box-arrow-right::before{content:"⇥"}.bi-house-door::before{content:"⌂"}.bi-check-circle::before{content:"✓"}
+.bi-exclamation-triangle::before{content:"!"}.bi-lightning-charge::before{content:"ϟ"}
+.bi-arrow-up-right::before{content:"↗"}.bi-arrow-right::before{content:"→"}.bi-plus-lg::before{content:"+"}
+.bi-hourglass-split::before{content:"⌛"}.bi-shield-lock::before{content:"♧"}.bi-box-arrow-up-right::before{content:"↗"}
