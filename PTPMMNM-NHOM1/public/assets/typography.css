@@ -1,0 +1,247 @@
+/*
+ * FLAGFLOW ENTERPRISE TYPOGRAPHY / v1.0
+ * A single readable Vietnamese typography layer shared by Admin, Developer,
+ * Tester, login/register, CommunityPass and the standalone demo.
+ * Presentation only: no change to routes, permissions or business actions.
+ * Load AFTER enterprise.css and account-switch.css to prevent old 9-12px rules
+ * from reducing legibility. Uses Windows fonts; no external font dependency.
+ */
+:root {
+  --ff-typeface: "Segoe UI Variable Text", "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  --ff-type-ink: #1c2d4a;
+  --ff-type-muted: #52647f;
+  --ff-type-faint: #62738c;
+}
+html { font-size: 16px; }
+body.ff-enterprise,
+body.login-body,
+body.ff-demo-body {
+  font-family: var(--ff-typeface) !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: normal !important;
+  text-rendering: optimizeLegibility;
+}
+body.ff-enterprise :is(button,input,select,textarea),
+body.login-body :is(button,input,select,textarea),
+body.ff-demo-body :is(button,input,select,textarea) {
+  font-family: inherit;
+  letter-spacing: normal;
+}
+body.ff-enterprise :is(p,li,dd,dt), body.login-body p, body.ff-demo-body p {
+  line-height: 1.65;
+}
+body.ff-enterprise :is(h1,h2,h3,h4,h5,h6),
+body.login-body :is(h1,h2,h3,h4,h5,h6),
+body.ff-demo-body :is(h1,h2,h3,h4,h5,h6) {
+  font-family: var(--ff-typeface);
+  font-weight: 720;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+  overflow-wrap: anywhere;
+}
+/* Top-level titles; avoid oversized ultra-bold text with compressed spacing. */
+body.ff-enterprise .e-dash-hero h1,
+body.ff-enterprise .ff-page-heading h1,
+body.ff-enterprise .ff-dashboard-welcome h1 {
+  font-size: clamp(26px, 2.25vw, 32px) !important;
+  font-weight: 740 !important;
+  line-height: 1.32 !important;
+  letter-spacing: -.025em !important;
+}
+body.ff-enterprise .e-dash-hero p,
+body.ff-enterprise .ff-page-heading .ff-subtitle,
+body.ff-enterprise .ff-subtitle,
+body.ff-enterprise .ff-dashboard-welcome p {
+  font-size: 14.5px !important;
+  color: var(--ff-type-muted) !important;
+  line-height: 1.7 !important;
+}
+body.ff-enterprise .ff-view-intro h2,
+body.ff-enterprise .section-head h2,
+body.ff-enterprise .ff-view-intro .h2 {
+  font-size: clamp(21px, 1.75vw, 25px) !important;
+  font-weight: 720 !important;
+  line-height: 1.38 !important;
+  letter-spacing: -.02em !important;
+}
+body.ff-enterprise .ff-view-intro p,
+body.ff-enterprise .section-head p,
+body.ff-enterprise .panel p,
+body.ff-enterprise .card p,
+body.ff-enterprise .workflow-lab p,
+body.ff-enterprise .ff-admin-project-controls p {
+  font-size: 14.5px !important;
+  line-height: 1.72 !important;
+  color: var(--ff-type-muted);
+}
+body.ff-enterprise .ff-kicker,
+body.ff-enterprise .e-eyebrow,
+body.ff-enterprise .ff-enterprise-menu-title,
+body.ff-enterprise .ff-dashboard-kicker {
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+  letter-spacing: .07em !important;
+  font-weight: 730 !important;
+}
+body.ff-enterprise .ff-breadcrumb {font-size: 12.5px !important; color: #526884 !important; line-height:1.5}
+/* Navigation is critical: role-specific screens must remain easy to scan. */
+body.ff-enterprise .ff-enterprise-navigation .ff-nav-item,
+body.ff-enterprise .ff-navigation .ff-nav-item {
+  font-size: 14px !important;
+  font-weight: 590 !important;
+  line-height: 1.48 !important;
+}
+body.ff-enterprise .ff-enterprise-navigation .ff-nav-item.is-active {font-weight: 700 !important}
+body.ff-enterprise .ff-menu-children .ff-child-link {font-size: 13.5px !important; line-height: 1.55 !important}
+body.ff-enterprise .ff-enterprise-workspace b,
+body.ff-enterprise .ff-enterprise-sidebar-status b,
+body.ff-enterprise .ff-profile-info strong {font-size: 13px !important; font-weight: 690 !important}
+body.ff-enterprise .ff-enterprise-workspace small,
+body.ff-enterprise .ff-enterprise-sidebar-status small,
+body.ff-enterprise .ff-profile-info small {font-size: 12px !important; color: #61718b !important}
+body.ff-enterprise .ff-enterprise-brand strong {font-size: 24px !important; font-weight: 760 !important}
+body.ff-enterprise .ff-enterprise-brand small {font-size: 11.5px !important; letter-spacing: .02em !important; color: #536988 !important}
+body.ff-enterprise .ff-enterprise-menu-title {color:#657694 !important}
+body.ff-enterprise .ff-enterprise-navigation .ff-nav-item {color: #415574 !important}
+/* Top search, account dropdown and notifications. */
+body.ff-enterprise .ff-global-search input[type=search],
+body.ff-enterprise .ff-pro-search input[type=search] {
+  font-size: 14px !important;
+  font-weight: 450 !important;
+}
+body.ff-enterprise :is(input,textarea)::placeholder {color: #667994 !important; opacity: 1}
+body.ff-enterprise .ff-pro-live,
+body.ff-enterprise .ff-live {font-size: 12.5px !important; color:#526580 !important}
+body.ff-enterprise .ff-user-caption b {font-size: 14px !important; font-weight: 700 !important}
+body.ff-enterprise .ff-user-caption small {font-size: 12px !important; color:#60718b !important}
+body.ff-enterprise .ff-pro-menu .dropdown-item {font-size: 14px !important; line-height:1.5; font-weight: 560 !important}
+body.ff-enterprise .ff-pro-menu-title,
+body.ff-enterprise .ff-pro-overline {font-size: 11.5px !important; letter-spacing: .055em !important; color:#60728d !important}
+body.ff-enterprise .ff-pro-notice-content strong {font-size: 13.5px !important; line-height:1.55 !important}
+body.ff-enterprise .ff-pro-notice-content small,
+body.ff-enterprise .ff-pro-notice-empty span {font-size: 12.5px !important; color: #526580 !important}
+/* KPI cards & role dashboards (Admin, Dev, Tester). */
+body.ff-enterprise .e-metric-label,
+body.ff-enterprise .ff-kpi span,
+body.ff-enterprise .stat span {font-size: 13.5px !important; font-weight: 650 !important; color:#354765 !important}
+body.ff-enterprise .e-metric strong {font-size: clamp(28px,2.25vw,34px) !important; font-weight:760 !important}
+body.ff-enterprise .e-metric small {font-size: 12.5px !important; color: var(--ff-type-muted) !important; line-height:1.5 !important}
+body.ff-enterprise .e-panel-header h2 {font-size: 19px !important; font-weight: 730 !important; line-height:1.4 !important; letter-spacing:-.02em !important}
+body.ff-enterprise .e-panel-header p {font-size: 13.5px !important; color:var(--ff-type-muted) !important; line-height:1.65 !important}
+body.ff-enterprise .e-text-link {font-size:13px !important; font-weight:680 !important}
+body.ff-enterprise .e-panel-note {font-size:12px !important; color:var(--ff-type-muted) !important}
+/* Tables: body >= 13px; status and headers remain legible. */
+body.ff-enterprise table.e-table,
+body.ff-enterprise table:not(.mini-table) {font-size: 13.5px !important}
+body.ff-enterprise .e-table th,
+body.ff-enterprise table th {font-size: 12.5px !important; font-weight: 710 !important; line-height:1.45 !important; color:#485d7e !important}
+body.ff-enterprise .e-table td,
+body.ff-enterprise table td {font-size: 13.5px !important; line-height:1.6 !important; color:#394c69 !important}
+body.ff-enterprise .e-table-subject b {font-size: 13px !important; font-weight: 710 !important}
+body.ff-enterprise .e-table-subject small {font-size: 12px !important; color:#576a84 !important}
+body.ff-enterprise .e-project-tag,
+body.ff-enterprise .e-status,
+body.ff-enterprise .e-project-count,
+body.ff-enterprise .pill,
+body.ff-enterprise .badge:not(.ff-notification-count) {font-size: 12px !important; font-weight: 680 !important; line-height:1.3 !important}
+/* Other dashboard entries and timelines. */
+body.ff-enterprise .e-env-name b,
+body.ff-enterprise .e-project-item b,
+body.ff-enterprise .e-activity-row b,
+body.ff-enterprise .e-dashboard-cta b {font-size: 13.5px !important; font-weight: 690 !important; line-height:1.55 !important}
+body.ff-enterprise .e-env-name small,
+body.ff-enterprise .e-project-item small,
+body.ff-enterprise .e-activity-row small,
+body.ff-enterprise .e-dashboard-cta small,
+body.ff-enterprise .e-env-percent,
+body.ff-enterprise .e-activity-row time {font-size: 12px !important; color:var(--ff-type-muted) !important; line-height:1.5 !important}
+body.ff-enterprise .e-empty b,
+body.ff-enterprise .e-empty span {font-size: 13px !important; line-height:1.55 !important; color:#435874 !important}
+body.ff-enterprise .e-project-item b,
+body.ff-enterprise .e-project-item small {white-space: normal; overflow-wrap:anywhere}
+/* Existing workflows, Tester queue, previews and feature management. */
+body.ff-enterprise .workflow-steps {font-size: 13.5px !important; line-height:1.55 !important; color:#435676 !important}
+body.ff-enterprise .workflow-steps b {font-size:12px !important}
+body.ff-enterprise .workflow-info-grid small,
+body.ff-enterprise .workflow-result small {font-size:12.5px !important; color:var(--ff-type-muted) !important; line-height:1.55 !important}
+body.ff-enterprise .workflow-info-grid b {font-size: 14px !important; font-weight:650 !important; line-height:1.6 !important}
+body.ff-enterprise .workflow-lab h4,
+body.ff-enterprise .workflow-test-form h4 {font-size:16px !important; font-weight:710 !important}
+body.ff-enterprise .workflow-test-form .form-check-label {font-size:14px !important}
+body.ff-enterprise .ff-kpi strong {font-weight:760 !important}
+body.ff-enterprise :is(.project-card,.flag-card,.sample-feature) h3 {font-size:19px !important; line-height:1.4 !important; font-weight:720 !important}
+/* Forms: readable labels, controls, actions, validation and feedback. */
+body.ff-enterprise :is(label,.form-label) {font-size:13.5px !important; font-weight:650 !important; line-height:1.6 !important; color:#374a68 !important}
+body.ff-enterprise :is(input:not([type=checkbox]):not([type=radio]):not([type=hidden]),select,textarea,.form-control,.form-select) {
+  font-size:14px !important;
+  line-height:1.5 !important;
+}
+body.ff-enterprise :is(.btn,button.btn,a.btn),
+body.ff-enterprise :is(.btn.small,.btn-sm) {font-size:13.5px !important; font-weight:670 !important; line-height:1.45 !important}
+body.ff-enterprise :is(.ff-alert,.flash,.alert) {font-size:14px !important; line-height:1.65 !important}
+body.ff-enterprise :is(small,.small) {font-size:12.5px; line-height:1.55}
+body.ff-enterprise .text-secondary:not(.badge) {color:var(--ff-type-muted) !important}
+body.ff-enterprise a:not(.btn):focus-visible,
+body.ff-enterprise button:focus-visible,
+body.ff-enterprise select:focus-visible,
+body.ff-enterprise input:focus-visible,
+body.ff-enterprise textarea:focus-visible {outline: 2px solid #2563eb; outline-offset:2px}
+/* Saved-account switcher and login screen. */
+.ff-switch-title,
+.ff-remembered-login h2 {font-size:14px !important; font-weight:710 !important}
+.ff-switch-profile-text b,
+.ff-remember-login-button b {font-size:13px !important}
+.ff-switch-profile-text small,
+.ff-remember-login-button small,
+.ff-switch-current,
+.ff-switch-title small {font-size:12px !important}
+.ff-switch-add,
+.ff-switch-empty,
+.ff-switch-hint,
+.ff-remember-security,
+.ff-remembered-login>p {font-size:12.5px !important; line-height:1.6 !important; color:#52657e !important}
+.ff-remember-checkbox {font-size:14px !important}
+body.login-body .login-card h1 {font-size:clamp(26px,3vw,34px) !important; font-weight:740 !important}
+body.login-body .login-card p {font-size:14px !important; line-height:1.65 !important}
+body.login-body .login-card :is(label,input,button) {font-size:14px !important}
+body.login-body .login-card :is(small,.small) {font-size:12.5px !important}
+body.login-body :is(input,textarea)::placeholder {color:#667994 !important;opacity:1}
+/* CommunityPass modules and feature application pages. */
+body.ff-enterprise .community-app :is(p,li,label),
+body.ff-enterprise .ff-feature-section :is(p,li,label),
+body.ff-enterprise .ff-project-runtime :is(p,li,label) {font-size:14px !important;line-height:1.65 !important}
+body.ff-enterprise .community-app :is(h2,h3,h4),
+body.ff-enterprise .ff-feature-section :is(h2,h3,h4) {font-weight:720 !important;line-height:1.4 !important}
+/* Dark mode: improve subdued text without changing statuses/semantic colors. */
+body.ff-enterprise[data-ff-theme="dark"] {
+  --ff-type-ink:#edf4ff;
+  --ff-type-muted:#c2d0e2;
+  --ff-type-faint:#b4c5dc;
+}
+body.ff-enterprise[data-ff-theme="dark"] :is(.ff-subtitle,.e-dash-hero p,.e-panel-header p,.e-metric small,.e-panel-note,.e-env-name small,.e-project-item small,.e-activity-row small,.e-activity-row time,.ff-view-intro p,.section-head p,.e-dashboard-cta small,.e-empty span,.e-table-subject small,.workflow-info-grid small,.workflow-result small,.ff-pro-notice-content small,.ff-pro-notice-empty span) {
+  color:#c2d0e2 !important;
+}
+body.ff-enterprise[data-ff-theme="dark"] :is(.e-metric-label,.ff-kpi span,.stat span,.e-env-name b,.e-project-item b,.e-activity-row b,.e-empty b,.e-dashboard-cta b,.ff-breadcrumb,.ff-user-caption b,.ff-pro-live,.ff-live,.ff-enterprise-menu-title,.ff-enterprise-workspace b,.ff-enterprise-workspace small,.ff-enterprise-sidebar-status b,.ff-enterprise-sidebar-status small,.ff-profile-info strong,.ff-profile-info small,.ff-switch-title,.ff-switch-profile-text b) {color:#e1eaf8 !important}
+body.ff-enterprise[data-ff-theme="dark"] :is(.e-table th,table th) {color:#cad7e9 !important}
+body.ff-enterprise[data-ff-theme="dark"] :is(.e-table td,table td,.workflow-steps,.workflow-info-grid b,label,.form-label) {color:#e1eaf8 !important}
+body.ff-enterprise[data-ff-theme="dark"] :is(input,textarea)::placeholder {color:#becce0 !important;opacity:1}
+body.ff-enterprise[data-ff-theme="dark"] .text-secondary:not(.badge) {color:#becce0 !important}
+body.ff-enterprise[data-ff-theme="dark"] :is(.ff-switch-hint,.ff-switch-empty,.ff-switch-add,.ff-switch-profile-text small,.ff-remember-security,.ff-pro-menu-title,.ff-pro-overline) {color:#c6d5e8 !important}
+/* Mobile: maintain readable sizes, allow long data values to wrap. */
+@media(max-width:800px){
+  body.ff-enterprise .e-dash-hero h1,body.ff-enterprise .ff-page-heading h1{font-size:25px !important}
+  body.ff-enterprise .e-panel-header h2{font-size:18px !important}
+  body.ff-enterprise .e-project-item small,body.ff-enterprise .e-activity-row small{white-space:normal}
+}
+@media(max-width:560px){
+  body.ff-enterprise .e-table-scroll{overflow-x:auto}
+  body.ff-enterprise .e-env-name{flex-wrap:wrap;gap:4px}
+  body.ff-enterprise .ff-enterprise-navigation .ff-nav-item{font-size:14px !important}
+}
+/* Standalone API demo: typography consistent with the main product. */
+body.ff-demo-body h1{font-size:clamp(25px,3vw,32px) !important}
+body.ff-demo-body h2{font-size:21px !important}
+body.ff-demo-body .muted{font-size:13.5px !important;color:#52627b !important}
+body.ff-demo-body :is(button,input,select,textarea,table){font-size:14px !important}

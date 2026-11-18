@@ -1,0 +1,22 @@
+/* Release workflow — follows existing FlagFlow Bootstrap theme */
+.workflow-steps{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#fff;border:1px solid #e5eaf4;border-radius:14px;padding:16px 19px;color:#7988a2;font-size:12px;font-weight:700}
+.workflow-steps span{padding:7px 10px;border-radius:9px;background:#f5f7fb}
+.workflow-steps span.is-current{background:#eae9ff;color:#5853cc}
+.workflow-steps b{font-size:10px;background:#dfe4f0;border-radius:50%;display:inline-grid;place-items:center;width:20px;height:20px;margin-right:6px}
+.workflow-steps .is-current b{background:#6059e4;color:#fff}
+.workflow-steps>i{font-size:12px}
+.workflow-review-card{border-left:4px solid #6c64e6!important}
+.workflow-info-grid{display:grid;grid-template-columns:1fr 2fr 1fr;gap:12px}
+.workflow-info-grid>div{padding:12px 14px;border-radius:11px;background:#f6f8fc}
+.workflow-info-grid small,.workflow-result small{display:block;color:#8290a5;font-size:11px;margin-bottom:5px}
+.workflow-info-grid b{font-size:12px;line-height:1.6;display:block}
+.workflow-lab{background:#f9faff;border:1px solid #e4e9f5;border-radius:13px;padding:17px}
+.workflow-lab h4,.workflow-test-form h4{font-weight:800;font-size:15px;color:#2b3459}
+.workflow-result{padding:15px;border:1px solid #e0e6ef;background:#fff;border-radius:11px}
+.workflow-result.is-new{border-color:#b9b8fd;background:#f4f3ff}
+.workflow-result strong{font-size:20px;color:#3e4780;display:block;margin-bottom:5px}
+.workflow-test-form{border-top:1px solid #e7ebf4;padding-top:20px}
+.workflow-test-form .form-check-label{font-size:12px;color:#37455e}
+.workflow-test-form .form-check-input{float:left;width:16px;height:16px;min-height:0;margin-top:3px;margin-right:9px}
+.workflow-admin-form{min-width:210px}
+@media(max-width:820px){.workflow-info-grid{grid-template-columns:1fr}.workflow-steps>i{display:none}}

@@ -1,0 +1,43 @@
+/* Saved accounts and secure account switcher — 2026. */
+body.ff-enterprise .ff-pro-account-menu{width:min(390px,calc(100vw - 22px));max-height:min(85vh,760px);overflow-y:auto}
+.ff-switch-section{margin:9px 8px 7px;padding:12px 11px 8px;border-radius:13px;background:#f6f8fd;border:1px solid #e8edf7;white-space:normal}
+.ff-switch-title{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:820;color:#263d65;margin:0 0 11px}
+.ff-switch-title .ff-top-svg{width:17px;height:17px;color:#346bec}
+.ff-switch-title small{margin-left:auto;color:#8e9eb6;font-size:10px;font-weight:700}
+.ff-switch-list{display:flex;flex-direction:column;gap:5px}
+.ff-switch-item{display:flex;align-items:stretch;border:1px solid #e8edf6;border-radius:11px;background:#fff;min-height:51px;overflow:hidden}
+.ff-switch-item.is-current{background:#ebf2ff;border-color:#d5e4ff}
+.ff-switch-login-form{flex:1;min-width:0;margin:0}
+.ff-switch-profile{border:0;background:transparent;display:flex;width:100%;align-items:center;gap:9px;padding:8px 8px;text-align:left;color:#253855;text-decoration:none;min-width:0;font:inherit}
+button.ff-switch-profile:hover{background:#edf4ff;color:#285cd9}
+.ff-switch-profile>.ff-top-svg{width:16px;height:16px;flex:none;color:#97a6b9}
+.ff-switch-avatar{width:33px;height:33px;flex:none;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#396af3,#617af1);color:white;font-size:14px;font-weight:800}
+.ff-switch-profile-text{flex:1;min-width:0}.ff-switch-profile-text b,.ff-switch-profile-text small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ff-switch-profile-text b{font-size:11.5px;color:#223457}.ff-switch-profile-text small{font-size:10px;color:#8a9cb3;margin-top:1px}
+.ff-switch-current{font-size:9px;color:#1d8760;background:#dbf5e9;border-radius:99px;padding:4px 7px;font-weight:770;flex:none}
+.ff-switch-remove-form{margin:0;display:flex;flex:none;border-left:1px solid #edf0f7}
+.ff-switch-remove-form button{width:28px;min-height:48px;border:0;background:transparent;font-size:20px;color:#97a5b9;cursor:pointer}
+.ff-switch-remove-form button:hover{color:#d54c58;background:#fff0f1}
+.ff-switch-quick-form{margin:5px 0 0}
+.ff-switch-add{display:flex;align-items:center;justify-content:flex-start;gap:7px;width:100%;border:1px dashed #ccd9f0;background:#fff;color:#2b63d9;padding:9px 11px;border-radius:10px;font-weight:770;font-size:11px;cursor:pointer}
+.ff-switch-add:hover{background:#eaf1ff;border-color:#93b3f4}
+.ff-switch-add .ff-top-svg{width:15px;height:15px}
+.ff-switch-empty{font-size:11px;color:#7d8aa2;margin:6px 0 12px;line-height:1.45}
+.ff-switch-hint{color:#95a3b8;font-size:9.5px;line-height:1.5;margin:9px 3px 0}
+.ff-remember-checkbox{display:flex!important;align-items:center;gap:9px;cursor:pointer;text-align:left;font-size:12px!important;color:#3e4f6b!important;margin:14px 0 2px}
+.ff-remember-checkbox input[type=checkbox]{width:16px;height:16px;flex:none;margin:0;accent-color:#306af0}
+.ff-remember-security{font-size:10px;color:#8492aa;line-height:1.5;margin:3px 0 15px}
+.ff-remembered-login{margin-top:19px;padding-top:16px;border-top:1px solid #e4e9f5;text-align:left}
+.ff-remembered-login h2{font-size:13px;color:#243a5c;margin:0 0 4px;font-weight:800}.ff-remembered-login>p{color:#8293ad;font-size:10px;margin:0 0 11px}
+.ff-remembered-login-row{display:flex;align-items:stretch;gap:0;border:1px solid #e4eaf5;border-radius:11px;margin:7px 0;overflow:hidden;background:#fff}
+.ff-remember-switch-form{flex:1;min-width:0;margin:0}.ff-remember-login-button{display:flex;align-items:center;width:100%;gap:10px;padding:9px;border:0;background:transparent;text-align:left;color:#2d4260;cursor:pointer}.ff-remember-login-button:hover{background:#eef4ff}.ff-remember-login-button>span:nth-child(2){flex:1;min-width:0}.ff-remember-login-button b,.ff-remember-login-button small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ff-remember-login-button b{font-size:11.5px}.ff-remember-login-button small{font-size:10px;color:#8594ab}
+.ff-remember-avatar{height:35px;width:35px;display:grid;place-items:center;border-radius:11px;flex:none;color:#fff;background:#496ce4;font-size:14px;font-weight:800}
+.ff-remember-remove-form{display:flex;margin:0;border-left:1px solid #edf0f7}.ff-remember-remove-form button{border:0;background:transparent;color:#9ba7b6;font-size:19px;padding:0 12px;cursor:pointer}.ff-remember-remove-form button:hover{color:#c7374b;background:#ffeff2}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-section{background:#142841;border-color:#334863}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-title,body.ff-enterprise[data-ff-theme=dark] .ff-switch-profile-text b{color:#eaf0fd}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-item,body.ff-enterprise[data-ff-theme=dark] .ff-switch-add{background:#1b304b;border-color:#354c6b}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-item.is-current{background:#223b62}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-add{color:#a5c2ff}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-add:hover,body.ff-enterprise[data-ff-theme=dark] button.ff-switch-profile:hover{background:#2a4365}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-profile-text small,body.ff-enterprise[data-ff-theme=dark] .ff-switch-hint,body.ff-enterprise[data-ff-theme=dark] .ff-switch-empty{color:#9cb0ce}
+body.ff-enterprise[data-ff-theme=dark] .ff-switch-profile,body.ff-enterprise[data-ff-theme=dark] .ff-switch-remove-form button{color:#d4e4fb}
+@media(max-width:580px){.ff-switch-section{margin:6px 4px 7px}.ff-switch-current{font-size:8px}}

@@ -1,0 +1,118 @@
+/* FlagFlow – Project cards: dark theme contrast and tidy layout. */
+/* Dark mode is controlled by data-ff-theme, NOT by .theme-dark. */
+body.ff-redesign .project-grid {
+  align-items: start;
+  gap: 20px;
+}
+body.ff-redesign .ff-project-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  min-height: 0;
+  padding: 25px;
+  border-radius: 18px;
+}
+body.ff-redesign .ff-project-summary-content > p {
+  min-height: 0;
+  margin: 10px 0 16px;
+  line-height: 1.65;
+}
+body.ff-redesign .ff-project-env-summary {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 17px 18px;
+  border: 1px solid #dbe6f3;
+  border-radius: 13px;
+  background: #f4f8fd;
+  color: #334965;
+}
+body.ff-redesign .ff-project-env-title {
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .06em;
+  color: #233c5a;
+  margin-bottom: 4px;
+}
+body.ff-redesign .ff-project-env-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+body.ff-redesign .ff-project-env-row b {
+  color: #1e497c;
+  font-size: 12px;
+  white-space: nowrap;
+}
+body.ff-redesign .ff-project-summary-foot {
+  padding-top: 15px;
+  border-top: 1px solid #e2e9f3;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+body.ff-redesign .ff-project-summary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+body.ff-redesign .ff-project-action-link {
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 12px;
+}
+body.ff-redesign .ff-project-action-link:hover { text-decoration: underline; }
+
+/* Dark theme: fix pale text on bright panel and uneven contrast. */
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card {
+  background: #1b2b43 !important;
+  border: 1px solid #344a68 !important;
+  color: #eaf1ff !important;
+  box-shadow: 0 12px 30px rgba(3, 10, 25, .16) !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card h3,
+body.ff-redesign[data-ff-theme="dark"] .ff-project-env-title {
+  color: #f6f9ff !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card p,
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card code,
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-foot > span {
+  color: #bfd0e7 !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-env-summary {
+  background: #243a56 !important;
+  border-color: #3b5576 !important;
+  color: #d6e4f5 !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-env-row span {color: #d4e1f3 !important;}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-env-row b {color: #ffffff !important;}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-foot {border-color: #3a506c !important;}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-action-link {color: #78c7ff !important;}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-action-link:hover {color: #c4ecff !important;}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card .project-logo {
+  background: #293e61 !important;
+  color: #91bdff !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card .pill-violet {
+  background: #3b345f !important;
+  color: #ded2ff !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card .pill-orange {
+  background: #4f382b !important;
+  color: #ffd89d !important;
+}
+body.ff-redesign[data-ff-theme="dark"] .ff-project-summary-card .pill-blue {
+  background: #2c4769 !important;
+  color: #aed8ff !important;
+}
+@media (max-width: 700px) {
+  body.ff-redesign .ff-project-summary-card {padding: 18px;}
+  body.ff-redesign .ff-project-summary-actions {gap: 10px;}
+}
